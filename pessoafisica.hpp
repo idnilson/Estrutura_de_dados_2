@@ -6,7 +6,7 @@
   class Pessoafisica:public Pessoa
   {
     private:
-      int rg, cpf;
+      long rg, cpf;
 
     public:
 
@@ -16,7 +16,7 @@
         cpf = 0;
       }
 
-      Pessoafisica(string _nome, int idade, int _rg, int _cpf)
+      Pessoafisica(string _nome, long _idade, long _rg, long _cpf)
       {
         nome = _nome;
         idade = _idade;
@@ -30,12 +30,12 @@
         cout << "Deletando a instancia da classe pessoa fisica" <<endl;
       }
 
-      int getRg ()
+      long getRg ()
       {
         return rg;
       }
 
-      void setRg (int _rg)
+      void setRg (long _rg)
       {
         rg = _rg;
       }
@@ -45,7 +45,7 @@
         return cpf;
       }
 
-      void setCpf (int _cpf)
+      void setCpf (long _cpf)
       {
         cpf = _cpf;
       }
